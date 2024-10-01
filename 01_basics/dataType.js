@@ -1,4 +1,4 @@
-"use strict "
+"use strict " // treat all the Js code as newer version
 
 // alert is supported in browser but not in application
 // alert (3+3)
