@@ -108,9 +108,16 @@ var arr1 = [1,3,5,7]
 // for asynch block of code it is important to write async before the function and write await in the function
 
 async function abcd(){
-    await fetch(' api ')
-
+    var blob = await fetch(` https://randomuser.me/api/ `)
+    var res = await blob.json();
+    console.log(res.results[0]);
 }
+abcd();
+
+// it is important to write async as sometimes fetching takes more time to run so to code dont have to wait to long it is wrote
+// in the async block
+
+
 
 
 
