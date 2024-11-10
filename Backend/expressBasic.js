@@ -3,7 +3,7 @@
 
 //app.get(route,requestHandler)            -> requestHandler is the middleware
 const express = require('express'); // it means eavery package from express will be stored in the express named variable
-const app = express() // and we have created that variable function and stored in the app named variable
+const app = express(); // and we have created that variable function and stored in the app named variable
 // to create the middleware before going to router
 app.use(function(req,res,next){
     console.log('middleware run');
